@@ -58,9 +58,10 @@ class ViewController: UIViewController {
     }()
     
     lazy var urlString: String? = {
-        
+  
+        return "http://d2bgg7rjywcwsy.cloudfront.net/videos/119179/592417/encoded/1280_720_1280x720.mp4"
 //        return "http://sendvid.com/l9yydre4.mp4"
-        return "http://sendvid.com/jbxxzeev.mp4"
+//        return "http://sendvid.com/jbxxzeev.mp4"
 //        return "http://techslides.com/demos/sample-videos/small.mp4"
 //        return "http://sendvid.com/akztojrg.mp4"
     }()

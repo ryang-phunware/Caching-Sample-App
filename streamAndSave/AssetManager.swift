@@ -41,7 +41,6 @@ class AssetManager: NSObject, CanSaveAVAsset {
     //MARK: - Cache Operation
     func containsObject(forKey key: String) -> Bool {
         //return false
-        print("key is \(key)")
         
         switch selectedCache {
         case .YYCache:
@@ -64,9 +63,6 @@ class AssetManager: NSObject, CanSaveAVAsset {
     }
     
     func cache(object: Data?, forKey key: String) {
-        
-        print("Saving... key is \(key)")
-        
         switch selectedCache {
         case .YYCache:
             self.assetCache.diskCache.setData(object, forKey: key)
